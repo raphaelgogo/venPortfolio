@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Vanessa's Portfolio Website</title>
+  </head>
+
+  <body>
+    <!-- Header -->
+    <section id="header">
+      <div class="header container">
+        <div class="nav-bar">
+          <div class="brand">
+            <a href="#hero">
+              <h1><span>Vanessa.</span></h1>
+            </a>
+          </div>
+          <div class="nav-list">
+            <div class="hamburger">
+              <div class="bar"></div>
+            </div>
+            <ul>
+              <li><a href="#hero" data-after="Home">Home</a></li>
+              <li><a href="#services" data-after="Service">Services</a></li>
+              <li><a href="#projects" data-after="Projects">Projects</a></li>
+              <li><a href="#about" data-after="About">About</a></li>
+              <li><a href="#contact" data-after="Contact">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Header -->
+
+    <!-- Hero Section  -->
+    <section class="hero-container">
+      <div class="hero-content">
+        <div class="hero-text">
+          <h1><span>Hi,</span></h1>
+          <h1><span>My Name is</span></h1>
+          <h1>Vanessa Baah-Williams </h1>
+          <h1>
+            <span>
+              A customer service pro and front-end
+              developer passionate about great experiences and seamless
+              solutions.</span
+            >
+          </h1>
+          <a href="#projects" class="cta-button">View Portfolio</a>
+        </div>
+        <div class="hero-image">
+          <img src="/img/New Project.png" alt="Vanessa's image" />
+        </div>
+      </div>
+    </section>
+    <!-- End Hero Section  -->
+
+    <!-- Service Section -->
+    <section class="services-section">
+      <div class="services-container">
+        <div class="section-title">
+          <h2>My <span>Services</span></h2>
+        </div>
+        <div class="services-grid">
+          <!-- Customer Service Expertise -->
+          <div class="service-card">
+            <div class="service-icon">
+              <i class="fas fa-headset"></i>
+            </div>
+            <h3 class="service-title">Customer Service Excellence</h3>
+            <p class="service-description">
+              Dedicated to delivering exceptional customer experiences through
+              empathetic communication and efficient problem-solving.
+            </p>
+            <ul class="service-features">
+              <li>
+                <i class="fas fa-check"></i>Conflict Resolution & Problem
+                Solving
+              </li>
+              <li>
+                <i class="fas fa-check"></i>Customer Experience Optimization
+              </li>
+              <li>
+                <i class="fas fa-check"></i>Multi-channel Support Management
+              </li>
+              <li>
+                <i class="fas fa-check"></i>Customer Feedback Implementation
+              </li>
+            </ul>
+          </div>
+
+          <!-- Front-end Development -->
+          <div class="service-card">
+            <div class="service-icon">
+              <i class="fas fa-code"></i>
+            </div>
+            <h3 class="service-title">Front-end Development</h3>
+            <p class="service-description">
+              Creating responsive, user-friendly websites and applications with
+              modern technologies and best practices.
+            </p>
+            <ul class="service-features">
+              <li><i class="fas fa-check"></i>Responsive Web Design</li>
+              <li><i class="fas fa-check"></i>HTML5, CSS3 & JavaScript</li>
+              <li><i class="fas fa-check"></i>UI/UX Implementation</li>
+              <li><i class="fas fa-check"></i>Performance Optimization</li>
+            </ul>
+          </div>
+
+          <!-- Combined Expertise -->
+          <div class="service-card">
+            <div class="service-icon">
+              <i class="fas fa-star"></i>
+            </div>
+            <h3 class="service-title">User-Centric Solutions</h3>
+            <p class="service-description">
+              Combining technical expertise with customer service insight to
+              create meaningful digital experiences.
+            </p>
+            <ul class="service-features">
+              <li><i class="fas fa-check"></i>User Experience Consulting</li>
+              <li><i class="fas fa-check"></i>Accessibility Implementation</li>
+              <li><i class="fas fa-check"></i>Technical Support</li>
+              <li><i class="fas fa-check"></i>Project Management</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- End Service Section -->
+
+    <!-- Projects Section -->
+    <section class="projects-section">
+      <div class="projects-container">
+        <div class="showcase-header">
+          <h2 class="showcase-title">Featured <span>Projects</span></h2>
+          <p class="showcase-subtitle">
+            Showcasing my journey through web development with real-world
+            applications and creative solutions.
+          </p>
+        </div>
+
+        <div class="showcase-content">
+          <div class="card">
+            <div class="card-grid">
+              <div class="image-container">
+                <img src="" alt="Project Image" id="projectImage" />
+              </div>
+
+              <div class="content-container">
+                <div>
+                  <span class="project-type" id="projectType"></span>
+                  <h3 class="project-title" id="projectTitle"></h3>
+                  <p class="project-description" id="projectDescription"></p>
+                  <div class="tech-stack" id="techStack"></div>
+                </div>
+              </div>
+            </div>
+
+            <button class="nav-button prev-button">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <polyline points="15 18 9 12 15 6"></polyline>
+              </svg>
+            </button>
+
+            <button class="nav-button next-button">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <polyline points="9 18 15 12 9 6"></polyline>
+              </svg>
+            </button>
+          </div>
+          <div class="indicators" id="indicators"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- End Projects Section -->
+
+    <!-- About Section -->
+    <div class="container">
+      <div class="about-section">
+        <!-- Top content with image and highlights -->
+        <div class="top-content">
+          <div class="header">
+            <h2>About <span>Me</span></h2>
+          </div>
+          <div class="profile-side">
+            <div class="profile-image-container">
+              <img src="img/Vanessa.png" alt="Profile" class="profile-image" />
+            </div>
+          </div>
+
+          <div class="highlights-side">
+            <div class="highlight-card">
+              <p>
+                I'm a customer service expert and front-end developer passionate
+                about creating seamless user experiences. With a strong
+                background in solving customer problems and a love for coding, I
+                combine empathy and technical skills to build intuitive,
+                user-friendly interfaces.
+              </p>
+            </div>
+            <div class="highlight-card">
+              <p>
+                Proficient in HTML, CSS, JavaScript, and modern frameworks, I
+                thrive on turning ideas into functional, visually appealing
+                designs that make a real difference in users' lives.
+              </p>
+            </div>
+            <div class="highlight-card">
+              <p>
+                My unique blend of customer service expertise and technical
+                skills allows me to create solutions that not only work
+                flawlessly but truly resonate with end users.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Bottom - Resume button -->
+        <div class="resume-button-container">
+          <a href="#" class="cta">Download Resume</a>
+        </div>
+      </div>
+    </div>
+    <!-- End About Section -->
+
+    <!-- Contact Section -->
+    <section id="contact">
+      <div class="contact container">
+        <div>
+          <h1 class="section-title">Contact <span>info</span></h1>
+        </div>
+        <div class="contact-items">
+          <div class="contact-item">
+            <div class="icon">
+              <img src="https://img.icons8.com/bubbles/100/000000/phone.png" />
+            </div>
+            <div class="contact-info">
+              <h1>Phone</h1>
+              <h2>+233-557-566-233</h2>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="icon">
+              <img
+                src="https://img.icons8.com/bubbles/100/000000/new-post.png"
+              />
+            </div>
+            <div class="contact-info">
+              <h1>Email</h1>
+              <h2>baahwilliamsvanessa@gmail.com</h2>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="icon">
+              <img
+                src="https://img.icons8.com/bubbles/100/000000/map-marker.png"
+              />
+            </div>
+            <div class="contact-info">
+              <h1>Address</h1>
+              <h2>Dansoman, Accra-Ghana</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Contact Section -->
+
+    <!-- Footer -->
+    <section id="footer">
+      <div class="footer container">
+        <h2>Your Complete Web Solution</h2>
+        <p>Copyright © 2025 Vanessa Baah-Williams. All rights reserved</p>
+      </div>
+    </section>
+    <!-- End Footer -->
+    <script src="script.js"></script>
+  </body>
+</html>
