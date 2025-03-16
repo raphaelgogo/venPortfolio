@@ -16,12 +16,32 @@
 
   <body>
     <!-- Header -->
-    <section id="header">
+    <section id="header" class="padding-exempt">
       <div class="header container">
         <div class="nav-bar">
           <div class="brand">
             <a href="#hero">
-              <h1><span>Vanessa.</span></h1>
+              <!-- <h1><span>Nessa360</span></h1> -->
+              <svg
+                width="64"
+                height="64"
+                viewBox="0 0 64 64"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <rect
+                  x="0.5"
+                  y="0.5"
+                  width="63"
+                  height="63"
+                  stroke="#DC143C"
+                  stroke-opacity="0.9"
+                />
+                <path
+                  d="M16.384 45V19.8H20.236L36.04 39.204H34.132V19.8H38.776V45H34.924L19.12 25.596H21.028V45H16.384ZM46.5365 45.252C45.7205 45.252 45.0245 44.976 44.4485 44.424C43.8725 43.848 43.5845 43.128 43.5845 42.264C43.5845 41.352 43.8725 40.632 44.4485 40.104C45.0245 39.552 45.7205 39.276 46.5365 39.276C47.3525 39.276 48.0485 39.552 48.6245 40.104C49.2005 40.632 49.4885 41.352 49.4885 42.264C49.4885 43.128 49.2005 43.848 48.6245 44.424C48.0485 44.976 47.3525 45.252 46.5365 45.252Z"
+                  fill="#DC143C"
+                />
+              </svg>
             </a>
           </div>
           <div class="nav-list">
@@ -29,7 +49,7 @@
               <div class="bar"></div>
             </div>
             <ul>
-              <li><a href="#hero" data-after="Home">Home</a></li>
+              <li><a href="#landingPage" data-after="Home">Home</a></li>
               <li><a href="#services" data-after="Service">Services</a></li>
               <li><a href="#projects" data-after="Projects">Projects</a></li>
               <li><a href="#about" data-after="About">About</a></li>
@@ -42,30 +62,29 @@
     <!-- End Header -->
 
     <!-- Hero Section  -->
-    <section class="hero-container">
+    <section class="hero-container padding-exempt" id="landingPage">
       <div class="hero-content">
         <div class="hero-text">
-          <h1><span>Hi,</span></h1>
-          <h1><span>My Name is</span></h1>
-          <h1>Vanessa Baah-Williams </h1>
+          <!-- <h1><span>Hi,</span></h1> -->
+          <h1><span>Hi, I'm</span></h1>
+          <h1>Vanessa <br />Baah-Williams</h1>
           <h1>
             <span>
-              A customer service pro and front-end
-              developer passionate about great experiences and seamless
-              solutions.</span
+              A customer service pro and front-end developer passionate about
+              great experiences and seamless solutions.</span
             >
           </h1>
           <a href="#projects" class="cta-button">View Portfolio</a>
         </div>
         <div class="hero-image">
-          <img src="/img/New Project.png" alt="Vanessa's image" />
+          <!-- <img src="/img/portrait.png" alt="Vanessa's image" /> -->
         </div>
       </div>
     </section>
     <!-- End Hero Section  -->
 
     <!-- Service Section -->
-    <section class="services-section">
+    <section class="services-section" id="services">
       <div class="services-container">
         <div class="section-title">
           <h2>My <span>Services</span></h2>
@@ -140,11 +159,11 @@
     <!-- End Service Section -->
 
     <!-- Projects Section -->
-    <section class="projects-section">
+    <section class="projects-section" id="projects">
       <div class="projects-container">
-        <div class="showcase-header">
+        <div class="section-title">
           <h2 class="showcase-title">Featured <span>Projects</span></h2>
-          <p class="showcase-subtitle">
+          <p class="section-subtitle">
             Showcasing my journey through web development with real-world
             applications and creative solutions.
           </p>
@@ -205,59 +224,52 @@
     <!-- End Projects Section -->
 
     <!-- About Section -->
-    <div class="container">
-      <div class="about-section">
-        <!-- Top content with image and highlights -->
-        <div class="top-content">
-          <div class="header">
-            <h2>About <span>Me</span></h2>
-          </div>
-          <div class="profile-side">
-            <div class="profile-image-container">
-              <img src="img/Vanessa.png" alt="Profile" class="profile-image" />
+    <section class="about-section" id="about">
+      <div class="container">
+          <div class="col-left">
+            <div class="about-img">
+              <img src="./img/Vanessa.png" alt="img" />
             </div>
           </div>
 
-          <div class="highlights-side">
-            <div class="highlight-card">
-              <p>
-                I'm a customer service expert and front-end developer passionate
-                about creating seamless user experiences. With a strong
-                background in solving customer problems and a love for coding, I
-                combine empathy and technical skills to build intuitive,
-                user-friendly interfaces.
-              </p>
+          <div class="col-right">
+            <div class="section-title">
+              <h2>About <span>Me</span></h2>
             </div>
-            <div class="highlight-card">
-              <p>
-                Proficient in HTML, CSS, JavaScript, and modern frameworks, I
-                thrive on turning ideas into functional, visually appealing
-                designs that make a real difference in users' lives.
-              </p>
-            </div>
-            <div class="highlight-card">
-              <p>
-                My unique blend of customer service expertise and technical
-                skills allows me to create solutions that not only work
-                flawlessly but truly resonate with end users.
-              </p>
-            </div>
-          </div>
-        </div>
 
-        <!-- Bottom - Resume button -->
-        <div class="resume-button-container">
-          <a href="#" class="cta">Download Resume</a>
+            <p>
+              I'm a customer service expert and front-end developer passionate
+              about creating seamless user experiences. With a strong
+              background in solving customer problems and a love for coding, I
+              combine empathy and technical skills to build intuitive,
+              user-friendly interfaces.
+            </p>
+            <p>
+              Proficient in HTML, CSS, JavaScript, and modern frameworks, I
+              thrive on turning ideas into functional, visually appealing
+              designs that make a real difference in users' lives.
+            </p>
+            <p>
+              My unique blend of customer service expertise and technical
+              skills allows me to create solutions that not only work
+              flawlessly but truly resonate with end users.
+            </p>
+
+            <!-- Bottom - Resume button -->
+            <div class="resume-button-container">
+              <a href="https://drive.google.com/file/d/1HW1jwNJqlpVYdPYqlnHA7Excqc779fiV/view" class="cta-button">Download Resume</a>
+            </div>
+
         </div>
       </div>
-    </div>
+    </section>
     <!-- End About Section -->
 
     <!-- Contact Section -->
     <section id="contact">
       <div class="contact container">
-        <div>
-          <h1 class="section-title">Contact <span>info</span></h1>
+        <div class="section-title">
+          <h2>Contact <span>info</span></h2>
         </div>
         <div class="contact-items">
           <div class="contact-item">
@@ -297,12 +309,15 @@
     <!-- End Contact Section -->
 
     <!-- Footer -->
-    <section id="footer">
+    <footer id="footer">
       <div class="footer container">
-        <h2>Your Complete Web Solution</h2>
-        <p>Copyright © 2025 Vanessa Baah-Williams. All rights reserved</p>
+        <div class="brand">
+          <h1><span>Nessa</span>360<span></h1>
+        </div>
+        <h2>Your Complete Customer-Centric Web Solution</h2>
+        <p>Copyright © 2025 Nessa360. All rights reserved</p>
       </div>
-    </section>
+    </footer>
     <!-- End Footer -->
     <script src="script.js"></script>
   </body>
